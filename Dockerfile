@@ -43,6 +43,7 @@ RUN echo "$MY_KEY:$MY_SECRET" > /etc/passwd-s3fs && \
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+RUN modprobe fuse
 
 EXPOSE 8080
 # Start the entrypoint script
