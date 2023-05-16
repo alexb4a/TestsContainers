@@ -1,4 +1,8 @@
+
+'''
+
 FROM ubuntu:latest
-ARG B4AKEY
-ENV MY_KEY=${B4AKEY}
-RUN echo "HELLO YOUR APP KEY IS: $MY_KEY"
+RUN apt-get update && apt-get install -y nginx
+EXPOSE 80, 443
+
+CMD ["nginx", "-g", "demon off;"]
