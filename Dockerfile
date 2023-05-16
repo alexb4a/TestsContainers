@@ -1,4 +1,0 @@
-FROM ubuntu:latest
-ARG B4AKEY
-ENV MY_KEY=${B4AKEY}
-RUN echo "HELLO YOUR APP KEY IS: $MY_KEY"
