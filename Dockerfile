@@ -9,6 +9,7 @@ ADD http://mirrors.jenkins.io/war/latest/jenkins.war /usr/share/jenkins/jenkins.
 
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
+    kmod \
     automake \
     autotools-dev \
     fuse \
