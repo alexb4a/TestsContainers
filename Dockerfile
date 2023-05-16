@@ -44,5 +44,6 @@ RUN echo "$MY_KEY:$MY_SECRET" > /etc/passwd-s3fs && \
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+EXPOSE 8080
 # Start the entrypoint script
 CMD ["/entrypoint.sh"]
